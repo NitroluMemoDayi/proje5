@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: 0.3s ease all;
+    background-image: url(aslan.jpg);
+    opacity: 0.6;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 300px;
+    height: 90px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    opacity: 1;
+}
+#left,#right{
+    width: 50vw;
+    height: 100vh;
+    z-index: -1;
+    transition: .3s ease-in-out all;
+}
+#left{
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+#right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.butonlar{
+    z-index: 2;
+}
+@media screen and (max-width: 500px) {
+    button{
+        width: 150px;
+    }
+}
